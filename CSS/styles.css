@@ -456,7 +456,21 @@ form select {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    position: relative;
    }
+   .arrow-r:after {
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    border: 2px solid;
+    position: absolute; 
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+    left: 15px;
+    top: 20px;
+  }
   
 
 
@@ -611,5 +625,5 @@ form select {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
